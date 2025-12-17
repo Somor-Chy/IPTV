@@ -1,3 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPTV</title>
+    <link rel="icon" href="images/badhan.png" type="images/badhan.png">
+    <style>
+        body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #48f802;
+  text-align: center;
+  margin: 0px;
+}
+
+
+#myDIV {
+  width: 100%;
+  height: 100%;
+  background: red;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  from {background-color: red;}
+  to {background-color: blue;}
+}
+
+
+h2 {
+  position: fixed;
+  color: white;
+  font-family: "Arial", sans-serif;
+  font-weight: 300;
+  top: 50%;
+  left: 50%;
+  margin-top: -14px;
+  margin-left: -250px;
+}
+    </style>
+</head>
+
+
+<body>
+    <script>
+        document.addEventListener('keydown', function() {
+  if (event.keyCode == 123) {
+    alert("This function has been disabled to prevent you from stealing my code!");
+    return false;
+  } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+    alert("This function has been disabled to prevent you from stealing my code!");
+    return false;
+  } else if (event.ctrlKey && event.keyCode == 85) {
+    alert("This function has been disabled to prevent you from stealing my code!");
+    return false;
+  }
+}, false);
+
+if (document.addEventListener) {
+  document.addEventListener('contextmenu', function(e) {
+    alert("This function has been disabled to prevent you from stealing my code!");
+    e.preventDefault();
+  }, false);
+} else {
+  document.attachEvent('oncontextmenu', function() {
+    alert("This function has been disabled to prevent you from stealing my code!");
+    window.event.returnValue = false;
+  });
+}
+    </script>
+    <h2>IPTV Server Conf. By Badhan Debnath . © Copyright <script>document.write(new Date().getFullYear());</script> All rights reserved.</h2>
+
+    <div id="myDIV"></div>
+</body>
+
+</html>
+
+
 #EXTM3U url-tvg=""
 
 #BANGLADESH
